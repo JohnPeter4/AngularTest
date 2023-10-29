@@ -1,0 +1,16 @@
+<div  class="title">
+  <h2>Selecione o tipo</h2>
+  <app-item-select></app-item-select>
+  <h2>Produtos</h2>
+</div>
+<!--Imagem com chamada de função-->
+<div class="wishlist-container">
+  <app-wishlist-item
+    *ngFor="let item of wishlistItems"  
+    [name]="item.name"
+    [price]=item.price
+    [customSrc]="item.url"
+    [isInWishlist]="item.isInWishlist"
+    (wishlistToggle)="item.isInWishlist"
+  ></app-wishlist-item>
+</div>

@@ -1,0 +1,22 @@
+<div class="select">
+    <select class="Selecione" [(ngModel)]="select1" (change)="onChange()">
+        <option *ngFor="let p of equipamentos" [value]="p.id">
+            {{p.nome}}
+        </option>
+    </select>
+    <div class="Whislist" (click)="toggleSidebar()">
+        <div class="notification"  *ngIf="notificacao !== 0">
+            {{ notificacao }}
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 48 48" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><g data-name="Shopping bag"><path fill="#ff6f00" d="M27.5 18a1 1 0 0 1-1-1V9a7 7 0 0 0-14 0v8a1 1 0 0 1-2 0V9a9 9 0 0 1 18 0v8a1 1 0 0 1-1 1z" opacity="1" data-original="#ff6f00"></path><path fill="#ff8f00" d="M20.5 10H9.29a3 3 0 0 0-3 2.67l-3.56 32a3 3 0 0 0 3 3.33h6.8l8-.2a1 1 0 0 0 1-1V11a1 1 0 0 0-1.03-1z" opacity="1" data-original="#ff8f00" class=""></path><path fill="#ffb300" d="m45.25 44.67-3.56-32a3 3 0 0 0-3-2.67H16.5a1 1 0 0 0-1 .89l-4 36a1 1 0 0 0 1 1.11h29.77a3 3 0 0 0 3-3.33z" opacity="1" data-original="#ffb300" class=""></path><path fill="#ff8f00" d="M36.5 18a1 1 0 0 1-1-1V9a7 7 0 0 0-14 0v8a1 1 0 0 1-2 0V9a9 9 0 0 1 18 0v8a1 1 0 0 1-1 1z" opacity="1" data-original="#ff8f00" class=""></path></g></g></svg>
+    </div>
+    <p class="nav-route" (click)="navigateToMain()">
+        <option>Home</option>
+      </p>
+      <p class="nav-route" (click)="navigateToSecond()">
+        <option>Sobre</option>
+      </p>
+      <p class="nav-route" (click)="navigateToThird()">
+        <option>API</option>
+      </p>
+</div>

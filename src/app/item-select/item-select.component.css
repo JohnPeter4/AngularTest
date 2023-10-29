@@ -1,0 +1,58 @@
+.select {
+    display: flex;
+    align-items: center;
+    position: relative; /* Define o contexto de posicionamento relativo */
+}
+.nav-route{
+    font-size: 25px;
+    border-color: brown;
+    color: white;
+    background-color: rgb(144, 114, 172);
+    width: 10%;
+    margin : 0 0 0 5%;
+    border-radius: 8%;
+    border: 2cap;
+}
+  
+.notification {
+    position: absolute;
+    top: -10px; /* Ajuste a posição vertical conforme necessário */
+    background-color: red; /* Cor de fundo da notificação */
+    color: white; /* Cor do texto da notificação */
+    border-radius: 50%; /* Bordas arredondadas para o círculo */
+    width: 20px; /* Largura do círculo */
+    height: 20px; /* Altura do círculo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px; /* Tamanho da fonte do número */
+}
+  
+.Selecione{
+    font-size: 25px;
+    border-color: brown;
+    color: white;
+    background-color: blueviolet;
+    width: 40%;
+    margin : 0 0 0 2%;
+}
+
+option{
+    text-align: center;
+    margin-top: 5%;
+}
+.Selecione a {
+    background-color: white;
+    color:brown;
+    font-size: 40px;
+}
+.nav-route a {
+    background-color: white;
+    color:brown;
+    font-size: 20px;
+}
+.Whislist{
+    margin-left: 5%;
+    width: 40px;
+    height: 40px;
+}

@@ -1,0 +1,6 @@
+<div class="gallery">
+    <div *ngFor="let item of galleryItems" class="gallery-item">
+      <img [src]="item.image" alt="Imagem" />
+      <p>{{ item.description }}</p>
+    </div>
+  </div>

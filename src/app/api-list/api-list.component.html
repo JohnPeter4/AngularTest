@@ -1,0 +1,24 @@
+<div  class="title">
+    <h2>Selecione o tipo</h2>
+    <app-item-select></app-item-select>
+    <h2>Produtos</h2>
+</div>
+<br/>
+<div class="content">
+    <p>Aqui iremos conectar o back-end</p>
+
+
+    <button (click)="chamadaBack()">Teste do Back</button>
+
+    <ul class="Data"*ngFor="let result of val">    
+        <li>{{result.id}} - {{result.first_name}}  {{result.last_name}} </li>
+    </ul>
+
+
+    <button class="button" (click)="chamadaBackPost()">Teste do Back Post</button>
+
+
+    <ul class="Data" *ngIf="(clientResult)">    
+        <li>{{clientResult.id}} - {{clientResult.name}} - {{clientResult.job}} - {{clientResult.createdAt}} </li>
+    </ul>
+</div>

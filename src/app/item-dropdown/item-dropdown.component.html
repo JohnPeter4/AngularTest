@@ -1,0 +1,16 @@
+<h2>Dropdown</h2>
+
+<select [(ngModel)]="select1" (change)="onChange()">
+    <option *ngFor="let p of paises" [value]="p.id">
+        {{p.nome}}
+    </option>
+</select>
+<select [(ngModel)]="select2" class="rounded-inputs20 select-select col-md-3">
+    <option *ngFor="let c of cidades" [value]="c">
+        {{c}}
+    </option>
+</select>
+
+<button (click)="clickButton()"> OK </button>
+<p>País : {{pais}}</p>
+<p>Cidade : {{cidade}}</p>

@@ -1,0 +1,10 @@
+.centered-container {
+    display: flex; /* Define o layout flexível */
+    justify-content: center; /* Centraliza horizontalmente o contêiner */
+    align-items: center; /* Centraliza verticalmente o contêiner */
+    height: 20%; /* Define a altura do contêiner como 100% da altura da viewport */
+    border-width: 5px;
+  }
+.banner {
+  padding: 5% 0 5% 0;
+}

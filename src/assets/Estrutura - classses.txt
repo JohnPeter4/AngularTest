@@ -1,0 +1,23 @@
+{header}
+logo_caixa
+    logo
+    imagem
+banner
+
+{conteudo}
+principal
+    titulo-principal
+    conteudo
+    pizzawallpaper
+map
+    titulo-principal
+    mapa-conteudo
+beneficios
+    titulo-principal
+    conteudo-beneficio
+        lista-beneficio
+            itens(x5)
+    video
+{footer}
+footer
+    copyright

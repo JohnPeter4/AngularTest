@@ -1,0 +1,6 @@
+<h2>LISTA DE COMPRAS</h2>
+<ul class="Lista">
+    <li *ngFor="let data of combinedData">{{ data.item }} - {{ data.count }}
+    <button (click)="removeItem(data.item)">Remover</button>
+    </li>
+</ul>

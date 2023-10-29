@@ -1,0 +1,63 @@
+.sidebar {
+    background-color: #333; /* Cor de fundo da barra lateral */
+    color: #fff; /* Cor do texto na barra lateral */
+    width: 300px; /* Largura da barra lateral */
+    height: 100%; /* Altura da barra lateral (ajuste conforme necessário) */
+    position: fixed; /* Fixar a barra lateral à esquerda da tela */
+    top: 0; /* Alinhar a barra lateral ao topo da tela */
+    right: 0; /* Alinhar a barra lateral à esquerda da tela */
+    overflow-y: auto; /* Adicionar rolagem vertical se o conteúdo exceder a altura */
+    z-index: 1000; /* Z-index para empilhamento (ajuste conforme necessário) */
+  }
+  
+  /* Estilo para a lista de links na barra lateral */
+  .sidebar ul {
+    list-style: none; /* Remover marcadores de lista */
+    padding: 0; /* Remover preenchimento interno da lista */
+  }
+  
+  .sidebar ul li {
+    padding: 10px 20px; /* Preenchimento para cada item da lista */
+    border-bottom: 1px solid #555; /* Linha de separação entre os itens */
+  }
+  
+  /* Estilo para os links na barra lateral */
+  .sidebar ul li a {
+    text-decoration: none; /* Remover sublinhado dos links */
+    color: #fff; /* Cor dos links na barra lateral */
+    display: block; /* Exibir os links como blocos para preencher o espaço disponível */
+  }
+  
+  /* Estilo de hover para os links na barra lateral */
+  .sidebar ul li a:hover {
+    background-color: #f31000; /* Cor de fundo ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+  }
+  .tilt-quant{
+    margin-left: 40px;
+  }
+  .item{
+    max-width: 80px;
+  }
+  .quant{
+    text-align: center;
+    
+  }
+  .Price{
+    margin-right: 8%;
+  }
+  .header-row, .item-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .item-row {
+    background-color: #ff847c;
+  }
+
+  .lixo{
+    width: 20px;
+  }
